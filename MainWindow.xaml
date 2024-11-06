@@ -11,20 +11,33 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-
-        <!-- 디바이스 선택 -->
-        <GroupBox Header="Device" Grid.Row="0" Margin="5">
-            <StackPanel Orientation="Horizontal">
-                <ComboBox x:Name="DeviceList" Width="200" Margin="5"/>
-                <Button Content="Refresh" Click="RefreshDevices_Click" Margin="5"/>
-            </StackPanel>
+        <GroupBox Header="Device" Grid.Row="0" Margin="0,0,0,10">
+            <DockPanel LastChildFill="True">
+                <Button DockPanel.Dock="Right" 
+                        Content="Help" 
+                        Click="HelpButton_Click"
+                        Width="50" 
+                        Height="25"
+                        Margin="10,0,0,0"/>
+                
+                <StackPanel Orientation="Horizontal">
+                    <ComboBox 
+                        x:Name="DeviceList" 
+                        Width="200" 
+                        ItemsSource="{Binding Devices}"
+                        SelectedItem="{Binding SelectedDevice}"/>
+                    <Button Content="Refresh" 
+                            Command="{Binding RefreshDevicesCommand}"
+                            Margin="10,0,0,0"/>
+                </StackPanel>
+            </DockPanel>
         </GroupBox>
 
         <!-- 저장 경로 -->
         <GroupBox Header="Save Location" Grid.Row="1" Margin="5">
             <DockPanel>
                 <Button Content="Browse" DockPanel.Dock="Right" Click="Browse_Click" Margin="5"/>
-                <TextBox x:Name="SavePath" Margin="5"/>
+                <TextBox x:Name="SavePath" Margin="5" TextChanged="SavePath_TextChanged"/>
             </DockPanel>
         </GroupBox>
 

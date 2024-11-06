@@ -519,3 +519,7 @@ G:\AdbPacketCapture\obj\Release\net6.0-windows10.0.26100.0\win-x64\refint\AdbPac
 G:\AdbPacketCapture\obj\Release\net6.0-windows10.0.26100.0\win-x64\AdbPacketCapture.pdb
 G:\AdbPacketCapture\obj\Release\net6.0-windows10.0.26100.0\win-x64\AdbPacketCapture.genruntimeconfig.cache
 G:\AdbPacketCapture\obj\Release\net6.0-windows10.0.26100.0\win-x64\ref\AdbPacketCapture.dll
+G:\AdbPacketCapture\obj\Release\net6.0-windows10.0.26100.0\win-x64\Views\AboutDialog.g.cs
+G:\AdbPacketCapture\obj\Release\net6.0-windows10.0.26100.0\win-x64\AdbPacketCapture_MarkupCompile.lref
+G:\AdbPacketCapture\obj\Release\net6.0-windows10.0.26100.0\win-x64\Views\AboutDialog.baml
+G:\AdbPacketCapture\obj\Release\net6.0-windows10.0.26100.0\win-x64\AdbPacketCapture.sourcelink.json

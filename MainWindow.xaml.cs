@@ -4,6 +4,7 @@ using System.Windows;
 using System.Threading.Tasks;
 using AdbPacketCapture.Services;
 using AdbPacketCapture.Models;
+using AdbPacketCapture.Views;
 
 namespace AdbPacketCapture
 {
@@ -20,7 +21,7 @@ namespace AdbPacketCapture
             logger = new CaptureLogger();
             SavePath.Text = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
         }
-
+        
         private async void Window_Loaded(object sender, RoutedEventArgs e)
         {
             await RefreshDeviceList();
@@ -144,6 +145,13 @@ namespace AdbPacketCapture
                 LogText.AppendText($"{DateTime.Now:HH:mm:ss}: {message}\n");
                 LogText.ScrollToEnd();
             });
+        }
+
+        private void HelpButton_Click(object sender, RoutedEventArgs e)
+        {
+            var dialog = new AboutDialog();
+            dialog.Owner = this;
+            dialog.ShowDialog();
         }
     }
 }
