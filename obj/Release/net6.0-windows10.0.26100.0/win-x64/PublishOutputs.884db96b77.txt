@@ -1,0 +1,2 @@
+G:\AdbPacketCapture\bin\Release\net6.0-windows10.0.26100.0\win-x64\publish\AdbPacketCapture.pdb
+G:\AdbPacketCapture\bin\Release\net6.0-windows10.0.26100.0\win-x64\publish\AdbPacketCapture.exe

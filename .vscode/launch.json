@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Core Launch (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            // YourProjectName.dll을 실제 프로젝트 이름으로 변경
+            "program": "${workspaceFolder}/bin/Debug/net6.0-windows/AdbPacketCapture.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole"
+        }
+    ]
+}

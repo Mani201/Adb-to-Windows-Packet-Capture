@@ -1,0 +1,2 @@
+G:\AdbPacketCapture\Release\AdbPacketCapture.pdb
+G:\AdbPacketCapture\Release\AdbPacketCapture.exe
